@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var keyController = KeyController()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            TextField("API Key", text: $keyController.apiKey)
+            TextField("Organization", text: $keyController.organization)
         }
         .padding()
     }

@@ -11,7 +11,56 @@
 		FD5173D429C7C02300D3C5DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5173D329C7C02300D3C5DF /* ContentView.swift */; };
 		FD5173D629C7C02400D3C5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5173D529C7C02400D3C5DF /* Assets.xcassets */; };
 		FD5173D929C7C02400D3C5DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5173D829C7C02400D3C5DF /* Preview Assets.xcassets */; };
+		FD5173E729C7C04E00D3C5DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5173E629C7C04D00D3C5DF /* Cocoa.framework */; };
+		FD5173EC29C7C04E00D3C5DF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5173EB29C7C04E00D3C5DF /* SourceEditorExtension.swift */; };
+		FD5173EE29C7C04E00D3C5DF /* CreateEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5173ED29C7C04E00D3C5DF /* CreateEditorCommand.swift */; };
+		FD5173F329C7C04E00D3C5DF /* GTP.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FD5173E429C7C04D00D3C5DF /* GTP.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD8E186329D3661500273DF5 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5173E829C7C04E00D3C5DF /* XcodeKit.framework */; };
+		FD8E186429D3661500273DF5 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD5173E829C7C04E00D3C5DF /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD8E188229D386B000273DF5 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = FD8E188129D386B000273DF5 /* OpenAIKit */; };
+		FD8E188429D491D700273DF5 /* Array+XCSourceTextRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E188329D491D700273DF5 /* Array+XCSourceTextRange.swift */; };
+		FD8E188629D4921800273DF5 /* ReplaceSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E188529D4921800273DF5 /* ReplaceSelected.swift */; };
+		FD8E188929D5300500273DF5 /* Rearrange in Frameworks */ = {isa = PBXBuildFile; productRef = FD8E188829D5300500273DF5 /* Rearrange */; };
+		FD8E188C29D67D8A00273DF5 /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = FD8E188B29D67D8A00273DF5 /* Valet */; };
+		FD8E188E29D67D9C00273DF5 /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = FD8E188D29D67D9C00273DF5 /* Valet */; };
+		FD8E189029D67F6C00273DF5 /* KeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E188F29D67F6C00273DF5 /* KeyController.swift */; };
+		FD8E189129D684D500273DF5 /* KeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E188F29D67F6C00273DF5 /* KeyController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD5173F129C7C04E00D3C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5173C629C7C02300D3C5DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5173E329C7C04D00D3C5DF;
+			remoteInfo = GTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD5173F729C7C04E00D3C5DF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD5173F329C7C04E00D3C5DF /* GTP.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8E186529D3661500273DF5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD8E186429D3661500273DF5 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD5173CE29C7C02300D3C5DF /* GPTComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPTComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +69,17 @@
 		FD5173D529C7C02400D3C5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5173D829C7C02400D3C5DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD5173DA29C7C02400D3C5DF /* GPTComplete.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPTComplete.entitlements; sourceTree = "<group>"; };
+		FD5173E429C7C04D00D3C5DF /* GTP.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GTP.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5173E629C7C04D00D3C5DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FD5173E829C7C04E00D3C5DF /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD5173EB29C7C04E00D3C5DF /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		FD5173ED29C7C04E00D3C5DF /* CreateEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditorCommand.swift; sourceTree = "<group>"; };
+		FD5173EF29C7C04E00D3C5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5173F029C7C04E00D3C5DF /* GTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GTP.entitlements; sourceTree = "<group>"; };
+		FD8E186229D3657800273DF5 /* GTPRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GTPRelease.entitlements; sourceTree = "<group>"; };
+		FD8E188329D491D700273DF5 /* Array+XCSourceTextRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+XCSourceTextRange.swift"; sourceTree = "<group>"; };
+		FD8E188529D4921800273DF5 /* ReplaceSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceSelected.swift; sourceTree = "<group>"; };
+		FD8E188F29D67F6C00273DF5 /* KeyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +87,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8E188C29D67D8A00273DF5 /* Valet in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5173E129C7C04D00D3C5DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8E188929D5300500273DF5 /* Rearrange in Frameworks */,
+				FD8E188E29D67D9C00273DF5 /* Valet in Frameworks */,
+				FD5173E729C7C04E00D3C5DF /* Cocoa.framework in Frameworks */,
+				FD8E186329D3661500273DF5 /* XcodeKit.framework in Frameworks */,
+				FD8E188229D386B000273DF5 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				FD5173D029C7C02300D3C5DF /* GPTComplete */,
+				FD5173EA29C7C04E00D3C5DF /* GTP */,
+				FD5173E529C7C04D00D3C5DF /* Frameworks */,
 				FD5173CF29C7C02300D3C5DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				FD5173CE29C7C02300D3C5DF /* GPTComplete.app */,
+				FD5173E429C7C04D00D3C5DF /* GTP.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +130,7 @@
 			children = (
 				FD5173D129C7C02300D3C5DF /* GPTCompleteApp.swift */,
 				FD5173D329C7C02300D3C5DF /* ContentView.swift */,
+				FD8E188F29D67F6C00273DF5 /* KeyController.swift */,
 				FD5173D529C7C02400D3C5DF /* Assets.xcassets */,
 				FD5173DA29C7C02400D3C5DF /* GPTComplete.entitlements */,
 				FD5173D729C7C02400D3C5DF /* Preview Content */,
@@ -69,6 +146,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FD5173E529C7C04D00D3C5DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD5173E629C7C04D00D3C5DF /* Cocoa.framework */,
+				FD5173E829C7C04E00D3C5DF /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5173EA29C7C04E00D3C5DF /* GTP */ = {
+			isa = PBXGroup;
+			children = (
+				FD8E186229D3657800273DF5 /* GTPRelease.entitlements */,
+				FD5173EB29C7C04E00D3C5DF /* SourceEditorExtension.swift */,
+				FD5173ED29C7C04E00D3C5DF /* CreateEditorCommand.swift */,
+				FD5173EF29C7C04E00D3C5DF /* Info.plist */,
+				FD5173F029C7C04E00D3C5DF /* GTP.entitlements */,
+				FD8E188329D491D700273DF5 /* Array+XCSourceTextRange.swift */,
+				FD8E188529D4921800273DF5 /* ReplaceSelected.swift */,
+			);
+			path = GTP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +179,43 @@
 				FD5173CA29C7C02300D3C5DF /* Sources */,
 				FD5173CB29C7C02300D3C5DF /* Frameworks */,
 				FD5173CC29C7C02300D3C5DF /* Resources */,
+				FD5173F729C7C04E00D3C5DF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5173F229C7C04E00D3C5DF /* PBXTargetDependency */,
+			);
+			name = GPTComplete;
+			packageProductDependencies = (
+				FD8E188B29D67D8A00273DF5 /* Valet */,
+			);
+			productName = GPTComplete;
+			productReference = FD5173CE29C7C02300D3C5DF /* GPTComplete.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD5173E329C7C04D00D3C5DF /* GTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5173F429C7C04E00D3C5DF /* Build configuration list for PBXNativeTarget "GTP" */;
+			buildPhases = (
+				FD5173E029C7C04D00D3C5DF /* Sources */,
+				FD5173E129C7C04D00D3C5DF /* Frameworks */,
+				FD5173E229C7C04D00D3C5DF /* Resources */,
+				FD8E186529D3661500273DF5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GPTComplete;
-			productName = GPTComplete;
-			productReference = FD5173CE29C7C02300D3C5DF /* GPTComplete.app */;
-			productType = "com.apple.product-type.application";
+			name = GTP;
+			packageProductDependencies = (
+				FD8E188129D386B000273DF5 /* OpenAIKit */,
+				FD8E188829D5300500273DF5 /* Rearrange */,
+				FD8E188D29D67D9C00273DF5 /* Valet */,
+			);
+			productName = GTP;
+			productReference = FD5173E429C7C04D00D3C5DF /* GTP.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +230,9 @@
 					FD5173CD29C7C02300D3C5DF = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					FD5173E329C7C04D00D3C5DF = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = FD5173C929C7C02300D3C5DF /* Build configuration list for PBXProject "GPTComplete" */;
@@ -113,11 +244,17 @@
 				Base,
 			);
 			mainGroup = FD5173C529C7C02300D3C5DF;
+			packageReferences = (
+				FD8E188029D386B000273DF5 /* XCRemoteSwiftPackageReference "openai-kit" */,
+				FD8E188729D5300500273DF5 /* XCRemoteSwiftPackageReference "Rearrange" */,
+				FD8E188A29D67D8A00273DF5 /* XCRemoteSwiftPackageReference "Valet" */,
+			);
 			productRefGroup = FD5173CF29C7C02300D3C5DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FD5173CD29C7C02300D3C5DF /* GPTComplete */,
+				FD5173E329C7C04D00D3C5DF /* GTP */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +269,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD5173E229C7C04D00D3C5DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +284,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5173D429C7C02300D3C5DF /* ContentView.swift in Sources */,
+				FD8E189029D67F6C00273DF5 /* KeyController.swift in Sources */,
 				FD5173D229C7C02300D3C5DF /* GPTCompleteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD5173E029C7C04D00D3C5DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5173EC29C7C04E00D3C5DF /* SourceEditorExtension.swift in Sources */,
+				FD8E189129D684D500273DF5 /* KeyController.swift in Sources */,
+				FD8E188629D4921800273DF5 /* ReplaceSelected.swift in Sources */,
+				FD8E188429D491D700273DF5 /* Array+XCSourceTextRange.swift in Sources */,
+				FD5173EE29C7C04E00D3C5DF /* CreateEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5173F229C7C04E00D3C5DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5173E329C7C04D00D3C5DF /* GTP */;
+			targetProxy = FD5173F129C7C04E00D3C5DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FD5173DB29C7C02400D3C5DF /* Debug */ = {
@@ -263,9 +428,11 @@
 		FD5173DE29C7C02400D3C5DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GPTComplete/GPTComplete.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -290,9 +457,11 @@
 		FD5173DF29C7C02400D3C5DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GPTComplete/GPTComplete.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -309,6 +478,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmurryapps.GPTComplete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FD5173F529C7C04E00D3C5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GTP/GTP.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3DWM3SH7G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GTP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GTP;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcmurryapps.GPTComplete.GTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FD5173F629C7C04E00D3C5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GTP/GTPRelease.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3DWM3SH7G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GTP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GTP;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcmurryapps.GPTComplete.GTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -335,7 +560,66 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		FD5173F429C7C04E00D3C5DF /* Build configuration list for PBXNativeTarget "GTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5173F529C7C04E00D3C5DF /* Debug */,
+				FD5173F629C7C04E00D3C5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD8E188029D386B000273DF5 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanshine/openai-kit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+		FD8E188729D5300500273DF5 /* XCRemoteSwiftPackageReference "Rearrange" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChimeHQ/Rearrange.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.3;
+			};
+		};
+		FD8E188A29D67D8A00273DF5 /* XCRemoteSwiftPackageReference "Valet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/square/Valet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD8E188129D386B000273DF5 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD8E188029D386B000273DF5 /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
+		FD8E188829D5300500273DF5 /* Rearrange */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD8E188729D5300500273DF5 /* XCRemoteSwiftPackageReference "Rearrange" */;
+			productName = Rearrange;
+		};
+		FD8E188B29D67D8A00273DF5 /* Valet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD8E188A29D67D8A00273DF5 /* XCRemoteSwiftPackageReference "Valet" */;
+			productName = Valet;
+		};
+		FD8E188D29D67D9C00273DF5 /* Valet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD8E188A29D67D8A00273DF5 /* XCRemoteSwiftPackageReference "Valet" */;
+			productName = Valet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD5173C629C7C02300D3C5DF /* Project object */;
 }
