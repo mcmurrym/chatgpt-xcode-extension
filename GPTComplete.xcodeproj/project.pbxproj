@@ -25,6 +25,7 @@
 		FD8E188E29D67D9C00273DF5 /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = FD8E188D29D67D9C00273DF5 /* Valet */; };
 		FD8E189029D67F6C00273DF5 /* KeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E188F29D67F6C00273DF5 /* KeyController.swift */; };
 		FD8E189129D684D500273DF5 /* KeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E188F29D67F6C00273DF5 /* KeyController.swift */; };
+		FD8E189329D8E66F00273DF5 /* GPTInstructionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8E189229D8E66F00273DF5 /* GPTInstructionCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		FD8E188329D491D700273DF5 /* Array+XCSourceTextRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+XCSourceTextRange.swift"; sourceTree = "<group>"; };
 		FD8E188529D4921800273DF5 /* ReplaceSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceSelected.swift; sourceTree = "<group>"; };
 		FD8E188F29D67F6C00273DF5 /* KeyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyController.swift; sourceTree = "<group>"; };
+		FD8E189229D8E66F00273DF5 /* GPTInstructionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTInstructionCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				FD8E186229D3657800273DF5 /* GTPRelease.entitlements */,
 				FD5173EB29C7C04E00D3C5DF /* SourceEditorExtension.swift */,
 				FD5173ED29C7C04E00D3C5DF /* CreateEditorCommand.swift */,
+				FD8E189229D8E66F00273DF5 /* GPTInstructionCommand.swift */,
 				FD5173EF29C7C04E00D3C5DF /* Info.plist */,
 				FD5173F029C7C04E00D3C5DF /* GTP.entitlements */,
 				FD8E188329D491D700273DF5 /* Array+XCSourceTextRange.swift */,
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8E189329D8E66F00273DF5 /* GPTInstructionCommand.swift in Sources */,
 				FD5173EC29C7C04E00D3C5DF /* SourceEditorExtension.swift in Sources */,
 				FD8E189129D684D500273DF5 /* KeyController.swift in Sources */,
 				FD8E188629D4921800273DF5 /* ReplaceSelected.swift in Sources */,
